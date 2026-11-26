@@ -110,7 +110,7 @@ function Body({ doc, sim }: { doc: GenresDoc; sim: SimilaritySpec }) {
         </p>
         <p className="notice small" style={{ marginTop: 8 }}>
           This public edition replaces track-level search with genre exploration. Track titles, artists and per-track features are not published because redistribution
-          rights for them could not be confirmed. <Link to="/data#publication">Read why</Link>, or run TrackLens locally with the CSV to search individual tracks.
+          rights for them could not be confirmed. <Link to="/method#publication">Read why</Link>, or run TrackLens locally with the CSV to search individual tracks.
         </p>
       </div>
 

@@ -14,7 +14,7 @@ const NAV = [
   { to: '/explorer', label: FULL_MODE ? 'Track Explorer' : 'Genre Explorer' },
   { to: '/similar', label: FULL_MODE ? 'Find Similar Tracks' : 'Similar Genres' },
   { to: '/model', label: 'Model Lab' },
-  { to: '/data', label: 'Data & Method' },
+  { to: '/method', label: 'Data & Method' },
 ]
 
 const TITLES: Record<string, string> = {
@@ -22,13 +22,14 @@ const TITLES: Record<string, string> = {
   '/explorer': NAV[1].label,
   '/similar': NAV[2].label,
   '/model': 'Model Lab',
-  '/data': 'Data & Method',
+  '/method': 'Data & Method',
 }
 
 export default function App() {
   const { pathname } = useLocation()
   useEffect(() => {
-    document.title = `${TITLES[pathname] ?? 'Not found'} · TrackLens`
+    const key = pathname.length > 1 ? pathname.replace(/\/$/, '') : pathname
+    document.title = `${TITLES[key] ?? 'Not found'} · TrackLens`
     window.scrollTo(0, 0)
     document.getElementById('main')?.focus({ preventScroll: true })
   }, [pathname])
@@ -56,7 +57,7 @@ export default function App() {
               'Local full-data mode'
             ) : (
               <>
-                Public aggregate edition · <Link to="/data#publication">why</Link>
+                Public aggregate edition · <Link to="/method#publication">why</Link>
               </>
             )}
           </span>
@@ -69,7 +70,7 @@ export default function App() {
             <Route path="/explorer" element={<Explorer />} />
             <Route path="/similar" element={<Similar />} />
             <Route path="/model" element={<ModelLab />} />
-            <Route path="/data" element={<DataNotes />} />
+            <Route path="/method" element={<DataNotes />} />
             <Route
               path="*"
               element={
@@ -85,7 +86,7 @@ export default function App() {
         </Suspense>
       </main>
       <footer className="site">
-        TrackLens analyses a third-party snapshot of 114,000 track rows. Popularity is a 0–100 score recorded in that file, not a measure of listening. <Link to="/data">Data notes and attribution</Link>.
+        TrackLens analyses a third-party snapshot of 114,000 track rows. Popularity is a 0–100 score recorded in that file, not a measure of listening. <Link to="/method">Data notes and attribution</Link>.
       </footer>
     </>
   )

@@ -31,7 +31,7 @@ for (const f of files) {
   if (r.startsWith('data/') && !ALLOWED_DATA.has(r.slice(5))) failures.push(`unexpected data file: ${r}`)
 }
 for (const name of ALLOWED_DATA) if (!existsSync(join(dist, 'data', name))) failures.push(`missing data/${name}`)
-for (const page of ['index.html', '404.html']) {
+for (const page of ['index.html', '404.html', 'explorer/index.html', 'similar/index.html', 'model/index.html', 'method/index.html']) {
   const p = join(dist, page)
   if (!existsSync(p)) {
     failures.push(`missing ${page}`)

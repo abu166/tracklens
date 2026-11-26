@@ -444,7 +444,7 @@ function Evaluation({ ev, spec }: { ev: ModelEval; spec: ModelSpec }) {
           </details>
           <p className="small muted" style={{ marginTop: 10 }}>
             Features ({spec.features.length}): {spec.features.map(label).join(', ')}. Preprocessing was fitted on the training split only. Full details are in the{' '}
-            <Link to="/data#model">model card</Link>.
+            <Link to="/method#model">model card</Link>.
           </p>
         </section>
         <ActualVsPredicted ev={ev} scheme={scheme} />

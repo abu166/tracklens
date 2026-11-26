@@ -123,7 +123,7 @@ function SimilarGenres({ sim }: { sim: SimilaritySpec }) {
         <p className="small" style={{ margin: 0 }}>
           Listing similar tracks would publish track titles, artists and per-track audio features, and redistribution rights for those records could not be confirmed. The same
           method runs at genre level below, using genre centroids. Run TrackLens locally with the CSV to search individual tracks (see the README).{' '}
-          <Link to="/data#publication">Publication details</Link>.
+          <Link to="/method#publication">Publication details</Link>.
         </p>
       </div>
       <section className="panel" style={{ marginTop: 16 }} aria-live="polite">
