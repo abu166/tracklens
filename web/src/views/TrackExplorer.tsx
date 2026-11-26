@@ -1,8 +1,10 @@
 import * as Plot from '@observablehq/plot'
 import { useEffect, useId, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Chart, cssVar, plotBase, useColorScheme } from '../components/Chart'
-import { Empty, ErrorBox, GenrePicker, Loading, Pager, PopularityRange, Select, useAsync } from '../components/ui'
+import { Chart } from '../components/Chart'
+import { cssVar, plotBase, useColorScheme } from '../lib/chartTheme'
+import { Empty, ErrorBox, GenrePicker, Loading, Pager, PopularityRange, Select } from '../components/ui'
+import { useAsync } from '../lib/useAsync'
 import { loadOverview } from '../lib/data'
 import { fmtDuration, fmtInt, fmtNum, fmtPct, KEY_NAMES, label } from '../lib/format'
 import { explainNeighbor } from '../lib/explain'
@@ -277,8 +279,10 @@ function DensityChart({ d, scheme }: { d: QueryResult['density']; scheme: string
   )
 }
 
+const topFiveSimilar = (index: number): Promise<SimilarResult> => similarTracks(index, 5)
+
 function TrackDetail({ t }: { t: TrackRow }) {
-  const sim = useAsync<SimilarResult>(() => similarTracks(t.index, 5), [t.index])
+  const sim = useAsync(topFiveSimilar, t.index)
   return (
     <>
       <h2 id="td-h">{t.name || 'Untitled'}</h2>

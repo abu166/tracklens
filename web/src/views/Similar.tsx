@@ -1,6 +1,7 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { Empty, ErrorBox, Loading, Select, useAsync } from '../components/ui'
+import { Empty, ErrorBox, Loading, Select } from '../components/ui'
+import { useAsync } from '../lib/useAsync'
 import { TrackSearch } from '../components/TrackSearch'
 import { FULL_MODE, loadGenres, loadSimilarity } from '../lib/data'
 import { fmtNum, label } from '../lib/format'
@@ -32,27 +33,19 @@ function Method({ sim }: { sim: SimilaritySpec }) {
   )
 }
 
+async function loadNeighbours(idx: string | null): Promise<{ query: TrackRow; res: SimilarResult } | null> {
+  if (idx === null) return null
+  const [query, res] = await Promise.all([trackDetail(Number(idx)), similarTracks(Number(idx), 10)])
+  return { query, res }
+}
+
 function SimilarTracks({ sim }: { sim: SimilaritySpec }) {
   const [params, setParams] = useSearchParams()
   const idx = params.get('track')
-  const [query, setQuery] = useState<TrackRow | null>(null)
-  const [res, setRes] = useState<SimilarResult | null>(null)
-  const [busy, setBusy] = useState(false)
-
-  useEffect(() => {
-    if (idx === null) return
-    let live = true
-    setBusy(true)
-    Promise.all([trackDetail(Number(idx)), similarTracks(Number(idx), 10)]).then(([t, r]) => {
-      if (!live) return
-      setQuery(t)
-      setRes(r)
-      setBusy(false)
-    })
-    return () => {
-      live = false
-    }
-  }, [idx])
+  const result = useAsync(loadNeighbours, idx)
+  const busy = idx !== null && result.loading
+  const query = result.data?.query ?? null
+  const res = result.data?.res ?? null
 
   return (
     <>
@@ -66,6 +59,8 @@ function SimilarTracks({ sim }: { sim: SimilaritySpec }) {
       <section className="panel" style={{ marginTop: 16 }} aria-live="polite" aria-busy={busy}>
         {idx === null ? (
           <Empty>Search for a track above, or open one from the Track Explorer.</Empty>
+        ) : result.error ? (
+          <ErrorBox error={result.error} />
         ) : busy || !query || !res ? (
           <Loading what="nearest neighbours" />
         ) : !query.valid ? (

@@ -18,7 +18,7 @@ function table(): LocalTracks {
     dataSha256: 'x',
     count: n,
     genres: ['a', 'b', 'c'],
-    id: col((_, ) => 'id'),
+    id: col(() => 'id'),
     name: col((r) => r.name),
     artists: col((r) => r.artists),
     album: col((r) => r.album),

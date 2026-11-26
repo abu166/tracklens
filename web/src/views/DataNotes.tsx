@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
-import { ErrorBox, Loading, useAsync } from '../components/ui'
+import { ErrorBox, Loading } from '../components/ui'
+import { useAsync } from '../lib/useAsync'
 import { FULL_MODE, loadMeta, loadModel, loadModelEval, loadSimilarity } from '../lib/data'
 import { fmtInt, fmtNum, label } from '../lib/format'
 
