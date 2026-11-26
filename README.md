@@ -119,14 +119,14 @@ Or build it with `npm run build:full` and serve it with `npm run preview:full`. 
 ```
 
 ```bash
-cd web && npm run typecheck && npm test && npm run build && npm run check:dist
+cd web && npm run lint -- --deny-warnings && npm run typecheck && npm test && npm run build && npm run check:dist
 ```
 
 `check:dist` prints the build size and fails if restricted files, unexpected data files or asset paths outside `/tracklens/` reach `web/dist`.
 
 ## Deployment
 
-`.github/workflows/pages.yml` runs on every push to `main`. It installs locked dependencies (`npm ci` and `requirements.lock.txt`), runs the Python tests, type-checks, runs the unit tests, builds with `BASE_PATH=/<repo>/`, checks the build, and deploys `web/dist` to GitHub Pages. React Router runs under the repository subpath. Because GitHub Pages has no SPA rewrites, the post-build step writes the app shell to `explorer/`, `similar/`, `model/` and `method/` so deep links and refreshes return HTTP 200, and to `404.html` for any other path.
+`.github/workflows/pages.yml` runs on every push to `main`. It installs locked dependencies (`npm ci` and `requirements.lock.txt`), runs the Python tests, lints (warnings fail the build), type-checks, runs the unit tests, builds with `BASE_PATH=/<repo>/`, checks the build, and deploys `web/dist` to GitHub Pages. React Router runs under the repository subpath. Because GitHub Pages has no SPA rewrites, the post-build step writes the app shell to `explorer/`, `similar/`, `model/` and `method/` so deep links and refreshes return HTTP 200, and to `404.html` for any other path.
 
 ## Project layout
 

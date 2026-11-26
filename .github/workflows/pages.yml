@@ -30,7 +30,7 @@ jobs:
       - run: python -m pytest -q pipeline/tests
 
   build:
-    name: Type-check, test and build the site
+    name: Lint, type-check, test and build the site
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -45,6 +45,8 @@ jobs:
           cache: npm
           cache-dependency-path: web/package-lock.json
       - run: npm ci
+      # oxlint exits 0 on warnings by default; fail the build on any of them.
+      - run: npm run lint -- --deny-warnings
       - run: npm run typecheck
       - run: npm test
       - run: npm run build
