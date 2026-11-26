@@ -1,5 +1,7 @@
 # TrackLens
 
+[![CI and GitHub Pages](https://github.com/abu166/tracklens/actions/workflows/pages.yml/badge.svg?branch=main)](https://github.com/abu166/tracklens/actions/workflows/pages.yml)
+
 An interactive music-analytics dashboard built on a 114,000-row track dataset. It answers three questions:
 
 1. **How do genres differ** in audio features and recorded popularity?
