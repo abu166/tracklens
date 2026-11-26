@@ -1,0 +1,92 @@
+import { lazy, Suspense, useEffect } from 'react'
+import { NavLink, Route, Routes, useLocation, Link } from 'react-router-dom'
+import { FULL_MODE } from './lib/data'
+import { Loading } from './components/ui'
+import Overview from './views/Overview'
+
+const Explorer = lazy(() => import('./views/Explorer'))
+const Similar = lazy(() => import('./views/Similar'))
+const ModelLab = lazy(() => import('./views/ModelLab'))
+const DataNotes = lazy(() => import('./views/DataNotes'))
+
+const NAV = [
+  { to: '/', label: 'Overview', end: true },
+  { to: '/explorer', label: FULL_MODE ? 'Track Explorer' : 'Genre Explorer' },
+  { to: '/similar', label: FULL_MODE ? 'Find Similar Tracks' : 'Similar Genres' },
+  { to: '/model', label: 'Model Lab' },
+  { to: '/data', label: 'Data & Method' },
+]
+
+const TITLES: Record<string, string> = {
+  '/': 'Overview',
+  '/explorer': NAV[1].label,
+  '/similar': NAV[2].label,
+  '/model': 'Model Lab',
+  '/data': 'Data & Method',
+}
+
+export default function App() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    document.title = `${TITLES[pathname] ?? 'Not found'} · TrackLens`
+    window.scrollTo(0, 0)
+    document.getElementById('main')?.focus({ preventScroll: true })
+  }, [pathname])
+
+  return (
+    <>
+      <a href="#main" className="skip-link">
+        Skip to content
+      </a>
+      <header className="topbar">
+        <div className="topbar-inner">
+          <Link to="/" className="brand" aria-label="TrackLens home">
+            <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" />
+            TrackLens
+          </Link>
+          <nav className="nav" aria-label="Main">
+            {NAV.map((n) => (
+              <NavLink key={n.to} to={n.to} end={n.end}>
+                {n.label}
+              </NavLink>
+            ))}
+          </nav>
+          <span className="mode-pill">
+            {FULL_MODE ? (
+              'Local full-data mode'
+            ) : (
+              <>
+                Public aggregate edition · <Link to="/data#publication">why</Link>
+              </>
+            )}
+          </span>
+        </div>
+      </header>
+      <main id="main" tabIndex={-1}>
+        <Suspense fallback={<Loading what="view" />}>
+          <Routes>
+            <Route path="/" element={<Overview />} />
+            <Route path="/explorer" element={<Explorer />} />
+            <Route path="/similar" element={<Similar />} />
+            <Route path="/model" element={<ModelLab />} />
+            <Route path="/data" element={<DataNotes />} />
+            <Route
+              path="*"
+              element={
+                <div className="page-head">
+                  <h1>Page not found</h1>
+                  <p>
+                    That address is not part of TrackLens. <Link to="/">Go to the overview</Link>.
+                  </p>
+                </div>
+              }
+            />
+          </Routes>
+        </Suspense>
+      </main>
+      <footer className="site">
+        TrackLens analyses a third-party snapshot of 114,000 track rows. Popularity is a 0–100 score recorded in that file, not a measure of listening. <Link to="/data">Data notes and attribution</Link>.
+      </footer>
+    </>
+  )
+}

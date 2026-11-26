@@ -1,0 +1,2070 @@
+{
+ "schemaVersion": 1,
+ "tolerance": 1e-09,
+ "valid": [
+  {
+   "name": "training medians",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 37.94817966194098
+  },
+  {
+   "name": "all minimums",
+   "input": {
+    "duration_ms": 1000,
+    "explicit": 0,
+    "danceability": 0.0,
+    "energy": 0.0,
+    "key": 0,
+    "loudness": -60.0,
+    "mode": 0,
+    "speechiness": 0.0,
+    "acousticness": 0.0,
+    "instrumentalness": 0.0,
+    "liveness": 0.0,
+    "valence": 0.0,
+    "tempo": 0.0,
+    "time_signature": 0
+   },
+   "expected": 21.31791361483207
+  },
+  {
+   "name": "all maximums",
+   "input": {
+    "duration_ms": 6000000,
+    "explicit": 1,
+    "danceability": 1.0,
+    "energy": 1.0,
+    "key": 11,
+    "loudness": 5.0,
+    "mode": 1,
+    "speechiness": 1.0,
+    "acousticness": 1.0,
+    "instrumentalness": 1.0,
+    "liveness": 1.0,
+    "valence": 1.0,
+    "tempo": 250.0,
+    "time_signature": 7
+   },
+   "expected": 12.477377116541934
+  },
+  {
+   "name": "duration_ms at min",
+   "input": {
+    "duration_ms": 1000,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 29.221154955006295
+  },
+  {
+   "name": "duration_ms at max",
+   "input": {
+    "duration_ms": 6000000,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 35.67374423864094
+  },
+  {
+   "name": "explicit at min",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 37.94817966194098
+  },
+  {
+   "name": "explicit at max",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 1,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 43.195320690595096
+  },
+  {
+   "name": "danceability at min",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.0,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 25.33275431408651
+  },
+  {
+   "name": "danceability at max",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 1.0,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 38.84195079254742
+  },
+  {
+   "name": "energy at min",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.0,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 32.84506648998206
+  },
+  {
+   "name": "energy at max",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 1.0,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 26.534572724343388
+  },
+  {
+   "name": "key at min",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 0,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 37.34367196588218
+  },
+  {
+   "name": "key at max",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 11,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 38.66020912401517
+  },
+  {
+   "name": "loudness at min",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -60.0,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 33.09776559053155
+  },
+  {
+   "name": "loudness at max",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": 5.0,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 42.61171102304336
+  },
+  {
+   "name": "mode at min",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 0,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 38.66660267914496
+  },
+  {
+   "name": "mode at max",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 37.94817966194098
+  },
+  {
+   "name": "speechiness at min",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 37.00832506076554
+  },
+  {
+   "name": "speechiness at max",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 1.0,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 23.23330750006366
+  },
+  {
+   "name": "acousticness at min",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.0,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 32.92123139492041
+  },
+  {
+   "name": "acousticness at max",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 1.0,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 8.711785233404168
+  },
+  {
+   "name": "instrumentalness at min",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 39.88399377578217
+  },
+  {
+   "name": "instrumentalness at max",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 1.0,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 37.779825492997574
+  },
+  {
+   "name": "liveness at min",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.0,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 38.2843287102841
+  },
+  {
+   "name": "liveness at max",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 1.0,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 39.71056770358089
+  },
+  {
+   "name": "valence at min",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.0,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 50.98866184726858
+  },
+  {
+   "name": "valence at max",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 1.0,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 35.915174032104225
+  },
+  {
+   "name": "tempo at min",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 0.0,
+    "time_signature": 4
+   },
+   "expected": 39.24137244734008
+  },
+  {
+   "name": "tempo at max",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 250.0,
+    "time_signature": 4
+   },
+   "expected": 36.53254334628846
+  },
+  {
+   "name": "time_signature at min",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 0
+   },
+   "expected": 36.47064142452805
+  },
+  {
+   "name": "time_signature at max",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 7
+   },
+   "expected": 34.24439959761618
+  },
+  {
+   "name": "random 1",
+   "input": {
+    "duration_ms": 4643962,
+    "explicit": 0,
+    "danceability": 0.8586,
+    "energy": 0.69737,
+    "key": 1,
+    "loudness": 3.41545,
+    "mode": 1,
+    "speechiness": 0.78606,
+    "acousticness": 0.12811,
+    "instrumentalness": 0.45039,
+    "liveness": 0.3708,
+    "valence": 0.92676,
+    "tempo": 160.96628,
+    "time_signature": 6
+   },
+   "expected": 17.79379594168459
+  },
+  {
+   "name": "random 2",
+   "input": {
+    "duration_ms": 2661042,
+    "explicit": 0,
+    "danceability": 0.55458,
+    "energy": 0.06382,
+    "key": 9,
+    "loudness": -18.94181,
+    "mode": 1,
+    "speechiness": 0.35453,
+    "acousticness": 0.9707,
+    "instrumentalness": 0.89312,
+    "liveness": 0.77838,
+    "valence": 0.19464,
+    "tempo": 116.68025,
+    "time_signature": 0
+   },
+   "expected": 15.828992288687612
+  },
+  {
+   "name": "random 3",
+   "input": {
+    "duration_ms": 926583,
+    "explicit": 1,
+    "danceability": 0.74476,
+    "energy": 0.96751,
+    "key": 4,
+    "loudness": -35.92012,
+    "mode": 0,
+    "speechiness": 0.18947,
+    "acousticness": 0.12992,
+    "instrumentalness": 0.4757,
+    "liveness": 0.22691,
+    "valence": 0.66981,
+    "tempo": 109.28798,
+    "time_signature": 6
+   },
+   "expected": 16.359017047322656
+  },
+  {
+   "name": "random 4",
+   "input": {
+    "duration_ms": 4201890,
+    "explicit": 0,
+    "danceability": 0.83226,
+    "energy": 0.80476,
+    "key": 4,
+    "loudness": -41.25867,
+    "mode": 1,
+    "speechiness": 0.13975,
+    "acousticness": 0.19991,
+    "instrumentalness": 0.00736,
+    "liveness": 0.78692,
+    "valence": 0.66485,
+    "tempo": 176.29134,
+    "time_signature": 5
+   },
+   "expected": 25.1594912108645
+  },
+  {
+   "name": "random 5",
+   "input": {
+    "duration_ms": 2754036,
+    "explicit": 1,
+    "danceability": 0.1398,
+    "energy": 0.11453,
+    "key": 7,
+    "loudness": -29.37875,
+    "mode": 1,
+    "speechiness": 0.765,
+    "acousticness": 0.63472,
+    "instrumentalness": 0.55358,
+    "liveness": 0.55921,
+    "valence": 0.30395,
+    "tempo": 7.70446,
+    "time_signature": 3
+   },
+   "expected": 5.535499116723364
+  },
+  {
+   "name": "random 6",
+   "input": {
+    "duration_ms": 1288293,
+    "explicit": 0,
+    "danceability": 0.8534,
+    "energy": 0.23394,
+    "key": 1,
+    "loudness": -41.71005,
+    "mode": 0,
+    "speechiness": 0.66192,
+    "acousticness": 0.55703,
+    "instrumentalness": 0.7839,
+    "liveness": 0.66431,
+    "valence": 0.40639,
+    "tempo": 203.5051,
+    "time_signature": 1
+   },
+   "expected": 18.472384636685227
+  },
+  {
+   "name": "random 7",
+   "input": {
+    "duration_ms": 137250,
+    "explicit": 0,
+    "danceability": 0.72236,
+    "energy": 0.46188,
+    "key": 2,
+    "loudness": -27.43209,
+    "mode": 0,
+    "speechiness": 0.69632,
+    "acousticness": 0.44616,
+    "instrumentalness": 0.38102,
+    "liveness": 0.30151,
+    "valence": 0.63028,
+    "tempo": 90.45315,
+    "time_signature": 1
+   },
+   "expected": 30.02858174753326
+  },
+  {
+   "name": "random 8",
+   "input": {
+    "duration_ms": 708917,
+    "explicit": 1,
+    "danceability": 0.90858,
+    "energy": 0.69971,
+    "key": 3,
+    "loudness": 2.99646,
+    "mode": 1,
+    "speechiness": 0.71689,
+    "acousticness": 0.44936,
+    "instrumentalness": 0.27224,
+    "liveness": 0.09639,
+    "valence": 0.9026,
+    "tempo": 113.94407,
+    "time_signature": 1
+   },
+   "expected": 24.98631328791466
+  },
+  {
+   "name": "random 9",
+   "input": {
+    "duration_ms": 1836434,
+    "explicit": 1,
+    "danceability": 0.17677,
+    "energy": 0.85661,
+    "key": 8,
+    "loudness": -13.23491,
+    "mode": 0,
+    "speechiness": 0.62731,
+    "acousticness": 0.5841,
+    "instrumentalness": 0.64985,
+    "liveness": 0.08444,
+    "valence": 0.41581,
+    "tempo": 10.40354,
+    "time_signature": 3
+   },
+   "expected": 16.085493538152893
+  },
+  {
+   "name": "random 10",
+   "input": {
+    "duration_ms": 1979837,
+    "explicit": 0,
+    "danceability": 0.1034,
+    "energy": 0.58764,
+    "key": 2,
+    "loudness": 0.13281,
+    "mode": 1,
+    "speechiness": 0.34687,
+    "acousticness": 0.59092,
+    "instrumentalness": 0.0228,
+    "liveness": 0.95856,
+    "valence": 0.4823,
+    "tempo": 195.68381,
+    "time_signature": 1
+   },
+   "expected": 27.4029326049578
+  },
+  {
+   "name": "random 11",
+   "input": {
+    "duration_ms": 2920463,
+    "explicit": 0,
+    "danceability": 0.93783,
+    "energy": 0.57173,
+    "key": 5,
+    "loudness": -42.64658,
+    "mode": 0,
+    "speechiness": 0.52067,
+    "acousticness": 0.43891,
+    "instrumentalness": 0.02161,
+    "liveness": 0.82629,
+    "valence": 0.89616,
+    "tempo": 35.06227,
+    "time_signature": 4
+   },
+   "expected": 24.525081887585532
+  },
+  {
+   "name": "random 12",
+   "input": {
+    "duration_ms": 652346,
+    "explicit": 1,
+    "danceability": 0.28123,
+    "energy": 0.65942,
+    "key": 8,
+    "loudness": -10.03791,
+    "mode": 0,
+    "speechiness": 0.91601,
+    "acousticness": 0.23021,
+    "instrumentalness": 0.03741,
+    "liveness": 0.55485,
+    "valence": 0.37092,
+    "tempo": 207.44744,
+    "time_signature": 6
+   },
+   "expected": 21.263500170684935
+  },
+  {
+   "name": "random 13",
+   "input": {
+    "duration_ms": 1903516,
+    "explicit": 1,
+    "danceability": 0.29092,
+    "energy": 0.51506,
+    "key": 3,
+    "loudness": 0.84283,
+    "mode": 0,
+    "speechiness": 0.04491,
+    "acousticness": 0.4351,
+    "instrumentalness": 0.99238,
+    "liveness": 0.89168,
+    "valence": 0.74861,
+    "tempo": 222.69812,
+    "time_signature": 6
+   },
+   "expected": 24.984759620848035
+  },
+  {
+   "name": "random 14",
+   "input": {
+    "duration_ms": 3113631,
+    "explicit": 0,
+    "danceability": 0.77201,
+    "energy": 0.66166,
+    "key": 4,
+    "loudness": -53.85967,
+    "mode": 1,
+    "speechiness": 0.26246,
+    "acousticness": 0.93681,
+    "instrumentalness": 0.24097,
+    "liveness": 0.12276,
+    "valence": 0.83111,
+    "tempo": 38.32108,
+    "time_signature": 1
+   },
+   "expected": 24.989820626043198
+  },
+  {
+   "name": "random 15",
+   "input": {
+    "duration_ms": 3596697,
+    "explicit": 1,
+    "danceability": 0.19643,
+    "energy": 0.31032,
+    "key": 9,
+    "loudness": 3.16872,
+    "mode": 1,
+    "speechiness": 0.1439,
+    "acousticness": 0.01394,
+    "instrumentalness": 0.22966,
+    "liveness": 0.13182,
+    "valence": 0.67766,
+    "tempo": 30.45813,
+    "time_signature": 4
+   },
+   "expected": 25.352345450168645
+  },
+  {
+   "name": "random 16",
+   "input": {
+    "duration_ms": 4165880,
+    "explicit": 1,
+    "danceability": 0.19978,
+    "energy": 0.80412,
+    "key": 8,
+    "loudness": -11.96604,
+    "mode": 0,
+    "speechiness": 0.12375,
+    "acousticness": 0.92756,
+    "instrumentalness": 0.39758,
+    "liveness": 0.30095,
+    "valence": 0.48858,
+    "tempo": 165.71605,
+    "time_signature": 7
+   },
+   "expected": 18.93816266520092
+  },
+  {
+   "name": "random 17",
+   "input": {
+    "duration_ms": 1719391,
+    "explicit": 1,
+    "danceability": 0.02486,
+    "energy": 0.5552,
+    "key": 7,
+    "loudness": -53.11667,
+    "mode": 0,
+    "speechiness": 0.41911,
+    "acousticness": 0.96623,
+    "instrumentalness": 0.59604,
+    "liveness": 0.93302,
+    "valence": 0.80436,
+    "tempo": 116.8454,
+    "time_signature": 5
+   },
+   "expected": 14.163930143360979
+  },
+  {
+   "name": "random 18",
+   "input": {
+    "duration_ms": 108003,
+    "explicit": 0,
+    "danceability": 0.82943,
+    "energy": 0.79682,
+    "key": 3,
+    "loudness": -25.49998,
+    "mode": 1,
+    "speechiness": 0.86774,
+    "acousticness": 0.60311,
+    "instrumentalness": 0.41257,
+    "liveness": 0.37418,
+    "valence": 0.42588,
+    "tempo": 162.98276,
+    "time_signature": 6
+   },
+   "expected": 19.753892487338646
+  },
+  {
+   "name": "random 19",
+   "input": {
+    "duration_ms": 2723927,
+    "explicit": 0,
+    "danceability": 0.23666,
+    "energy": 0.74601,
+    "key": 9,
+    "loudness": -53.15692,
+    "mode": 0,
+    "speechiness": 0.59443,
+    "acousticness": 0.14617,
+    "instrumentalness": 0.82466,
+    "liveness": 0.31033,
+    "valence": 0.14387,
+    "tempo": 230.24262,
+    "time_signature": 1
+   },
+   "expected": 10.931055674732953
+  },
+  {
+   "name": "random 20",
+   "input": {
+    "duration_ms": 1709036,
+    "explicit": 0,
+    "danceability": 0.11549,
+    "energy": 0.02115,
+    "key": 1,
+    "loudness": -48.6483,
+    "mode": 0,
+    "speechiness": 0.59114,
+    "acousticness": 0.68071,
+    "instrumentalness": 0.39363,
+    "liveness": 0.31799,
+    "valence": 0.50453,
+    "tempo": 218.75124,
+    "time_signature": 6
+   },
+   "expected": 21.992622725379377
+  },
+  {
+   "name": "random 21",
+   "input": {
+    "duration_ms": 261807,
+    "explicit": 0,
+    "danceability": 0.23674,
+    "energy": 0.24939,
+    "key": 6,
+    "loudness": -32.94294,
+    "mode": 0,
+    "speechiness": 0.37361,
+    "acousticness": 0.52375,
+    "instrumentalness": 0.10167,
+    "liveness": 0.83346,
+    "valence": 0.05196,
+    "tempo": 231.21047,
+    "time_signature": 1
+   },
+   "expected": 36.42153411723011
+  },
+  {
+   "name": "random 22",
+   "input": {
+    "duration_ms": 5061606,
+    "explicit": 1,
+    "danceability": 0.97957,
+    "energy": 0.80203,
+    "key": 9,
+    "loudness": -18.23859,
+    "mode": 1,
+    "speechiness": 0.13455,
+    "acousticness": 0.53607,
+    "instrumentalness": 0.51422,
+    "liveness": 0.85757,
+    "valence": 0.4628,
+    "tempo": 96.27237,
+    "time_signature": 4
+   },
+   "expected": 20.791260452030194
+  },
+  {
+   "name": "random 23",
+   "input": {
+    "duration_ms": 1599513,
+    "explicit": 0,
+    "danceability": 0.47788,
+    "energy": 0.41689,
+    "key": 3,
+    "loudness": -36.11173,
+    "mode": 0,
+    "speechiness": 0.3275,
+    "acousticness": 0.37946,
+    "instrumentalness": 0.68574,
+    "liveness": 0.29688,
+    "valence": 0.94886,
+    "tempo": 229.087,
+    "time_signature": 3
+   },
+   "expected": 18.111002504519682
+  },
+  {
+   "name": "random 24",
+   "input": {
+    "duration_ms": 1970839,
+    "explicit": 1,
+    "danceability": 0.84856,
+    "energy": 0.65259,
+    "key": 9,
+    "loudness": -25.37305,
+    "mode": 1,
+    "speechiness": 0.28816,
+    "acousticness": 0.73489,
+    "instrumentalness": 0.2024,
+    "liveness": 0.6948,
+    "valence": 0.86072,
+    "tempo": 33.02571,
+    "time_signature": 4
+   },
+   "expected": 25.776955989014592
+  },
+  {
+   "name": "random 25",
+   "input": {
+    "duration_ms": 571479,
+    "explicit": 1,
+    "danceability": 0.08449,
+    "energy": 0.93594,
+    "key": 2,
+    "loudness": 2.32722,
+    "mode": 1,
+    "speechiness": 0.59368,
+    "acousticness": 0.78262,
+    "instrumentalness": 0.79511,
+    "liveness": 0.94603,
+    "valence": 0.25338,
+    "tempo": 147.51897,
+    "time_signature": 1
+   },
+   "expected": 21.192713053453375
+  },
+  {
+   "name": "random 26",
+   "input": {
+    "duration_ms": 3697378,
+    "explicit": 0,
+    "danceability": 0.56495,
+    "energy": 0.57243,
+    "key": 5,
+    "loudness": -26.02893,
+    "mode": 1,
+    "speechiness": 0.79924,
+    "acousticness": 0.49215,
+    "instrumentalness": 0.59959,
+    "liveness": 0.93124,
+    "valence": 0.11973,
+    "tempo": 29.27589,
+    "time_signature": 1
+   },
+   "expected": 6.717528971033263
+  },
+  {
+   "name": "random 27",
+   "input": {
+    "duration_ms": 3947522,
+    "explicit": 0,
+    "danceability": 0.77432,
+    "energy": 0.67123,
+    "key": 4,
+    "loudness": -1.60617,
+    "mode": 1,
+    "speechiness": 0.27053,
+    "acousticness": 0.36419,
+    "instrumentalness": 0.31444,
+    "liveness": 0.15761,
+    "valence": 0.14778,
+    "tempo": 234.03187,
+    "time_signature": 3
+   },
+   "expected": 22.093977881098414
+  },
+  {
+   "name": "random 28",
+   "input": {
+    "duration_ms": 2300536,
+    "explicit": 1,
+    "danceability": 0.55299,
+    "energy": 0.93614,
+    "key": 9,
+    "loudness": -28.84098,
+    "mode": 0,
+    "speechiness": 0.98663,
+    "acousticness": 0.71776,
+    "instrumentalness": 0.95119,
+    "liveness": 0.11848,
+    "valence": 0.85053,
+    "tempo": 159.26847,
+    "time_signature": 1
+   },
+   "expected": 17.16970844322264
+  },
+  {
+   "name": "random 29",
+   "input": {
+    "duration_ms": 3529960,
+    "explicit": 1,
+    "danceability": 0.0123,
+    "energy": 0.45432,
+    "key": 9,
+    "loudness": -40.80166,
+    "mode": 0,
+    "speechiness": 0.44231,
+    "acousticness": 0.30193,
+    "instrumentalness": 0.91844,
+    "liveness": 0.78129,
+    "valence": 0.11059,
+    "tempo": 249.25866,
+    "time_signature": 6
+   },
+   "expected": 17.449936175750427
+  },
+  {
+   "name": "random 30",
+   "input": {
+    "duration_ms": 1704167,
+    "explicit": 1,
+    "danceability": 0.10642,
+    "energy": 0.9991,
+    "key": 7,
+    "loudness": -17.74187,
+    "mode": 0,
+    "speechiness": 0.89703,
+    "acousticness": 0.029,
+    "instrumentalness": 0.24083,
+    "liveness": 0.14302,
+    "valence": 0.77677,
+    "tempo": 49.55106,
+    "time_signature": 6
+   },
+   "expected": 13.649122818797332
+  },
+  {
+   "name": "random 31",
+   "input": {
+    "duration_ms": 3937958,
+    "explicit": 0,
+    "danceability": 0.00543,
+    "energy": 0.05166,
+    "key": 7,
+    "loudness": -7.90368,
+    "mode": 0,
+    "speechiness": 0.84941,
+    "acousticness": 0.05723,
+    "instrumentalness": 0.80096,
+    "liveness": 0.9278,
+    "valence": 0.77211,
+    "tempo": 174.5302,
+    "time_signature": 6
+   },
+   "expected": 17.220660920697643
+  },
+  {
+   "name": "random 32",
+   "input": {
+    "duration_ms": 241868,
+    "explicit": 0,
+    "danceability": 0.12492,
+    "energy": 0.50453,
+    "key": 8,
+    "loudness": -19.04923,
+    "mode": 1,
+    "speechiness": 0.15521,
+    "acousticness": 0.73462,
+    "instrumentalness": 0.19304,
+    "liveness": 0.27076,
+    "valence": 0.7099,
+    "tempo": 245.0512,
+    "time_signature": 4
+   },
+   "expected": 18.354670189378528
+  },
+  {
+   "name": "random 33",
+   "input": {
+    "duration_ms": 327947,
+    "explicit": 1,
+    "danceability": 0.04235,
+    "energy": 0.88415,
+    "key": 8,
+    "loudness": -48.74669,
+    "mode": 0,
+    "speechiness": 0.18353,
+    "acousticness": 0.98003,
+    "instrumentalness": 0.45856,
+    "liveness": 0.78408,
+    "valence": 0.63641,
+    "tempo": 143.10329,
+    "time_signature": 1
+   },
+   "expected": 20.354454807840778
+  },
+  {
+   "name": "random 34",
+   "input": {
+    "duration_ms": 5676201,
+    "explicit": 0,
+    "danceability": 0.57802,
+    "energy": 0.69978,
+    "key": 7,
+    "loudness": 1.13864,
+    "mode": 0,
+    "speechiness": 0.50835,
+    "acousticness": 0.40403,
+    "instrumentalness": 0.47417,
+    "liveness": 0.11922,
+    "valence": 0.13409,
+    "tempo": 69.51889,
+    "time_signature": 2
+   },
+   "expected": 25.540372476967196
+  },
+  {
+   "name": "random 35",
+   "input": {
+    "duration_ms": 2567991,
+    "explicit": 1,
+    "danceability": 0.63463,
+    "energy": 0.41181,
+    "key": 4,
+    "loudness": -45.85415,
+    "mode": 1,
+    "speechiness": 0.31704,
+    "acousticness": 0.03606,
+    "instrumentalness": 0.4184,
+    "liveness": 0.47413,
+    "valence": 0.22559,
+    "tempo": 143.11448,
+    "time_signature": 4
+   },
+   "expected": 24.950728074887383
+  },
+  {
+   "name": "random 36",
+   "input": {
+    "duration_ms": 4212311,
+    "explicit": 1,
+    "danceability": 0.65243,
+    "energy": 0.31621,
+    "key": 9,
+    "loudness": -24.30562,
+    "mode": 0,
+    "speechiness": 0.62601,
+    "acousticness": 0.36066,
+    "instrumentalness": 0.51274,
+    "liveness": 0.73671,
+    "valence": 0.8864,
+    "tempo": 230.2643,
+    "time_signature": 4
+   },
+   "expected": 20.598690081622802
+  },
+  {
+   "name": "random 37",
+   "input": {
+    "duration_ms": 3122130,
+    "explicit": 1,
+    "danceability": 0.31445,
+    "energy": 0.83738,
+    "key": 5,
+    "loudness": -52.46931,
+    "mode": 0,
+    "speechiness": 0.84199,
+    "acousticness": 0.05557,
+    "instrumentalness": 0.28061,
+    "liveness": 0.33413,
+    "valence": 0.17299,
+    "tempo": 78.47334,
+    "time_signature": 5
+   },
+   "expected": 11.233978203572345
+  },
+  {
+   "name": "random 38",
+   "input": {
+    "duration_ms": 89082,
+    "explicit": 1,
+    "danceability": 0.85655,
+    "energy": 0.37226,
+    "key": 2,
+    "loudness": -20.94537,
+    "mode": 0,
+    "speechiness": 0.36492,
+    "acousticness": 0.95843,
+    "instrumentalness": 0.99546,
+    "liveness": 0.7721,
+    "valence": 0.31096,
+    "tempo": 171.91626,
+    "time_signature": 5
+   },
+   "expected": 33.691343848782
+  },
+  {
+   "name": "random 39",
+   "input": {
+    "duration_ms": 2327662,
+    "explicit": 1,
+    "danceability": 0.01073,
+    "energy": 0.20906,
+    "key": 6,
+    "loudness": -49.35617,
+    "mode": 0,
+    "speechiness": 0.8363,
+    "acousticness": 0.98913,
+    "instrumentalness": 0.55597,
+    "liveness": 0.83907,
+    "valence": 0.99032,
+    "tempo": 35.39897,
+    "time_signature": 3
+   },
+   "expected": 20.878592973363943
+  },
+  {
+   "name": "random 40",
+   "input": {
+    "duration_ms": 2356044,
+    "explicit": 0,
+    "danceability": 0.75533,
+    "energy": 0.43378,
+    "key": 5,
+    "loudness": -50.20626,
+    "mode": 0,
+    "speechiness": 0.9071,
+    "acousticness": 0.04465,
+    "instrumentalness": 0.23285,
+    "liveness": 0.29206,
+    "valence": 0.4902,
+    "tempo": 146.61129,
+    "time_signature": 3
+   },
+   "expected": 22.24663437993553
+  },
+  {
+   "name": "tree 0 node 0: instrumentalness at split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0132,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 38.426376445429895
+  },
+  {
+   "name": "tree 0 node 0: instrumentalness just above split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.013200000000000002,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 38.051841028194445
+  },
+  {
+   "name": "tree 1 node 0: instrumentalness at split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0132,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 38.426376445429895
+  },
+  {
+   "name": "tree 1 node 0: instrumentalness just above split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.013200000000000002,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 38.051841028194445
+  },
+  {
+   "name": "tree 2 node 0: instrumentalness at split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0132,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 38.426376445429895
+  },
+  {
+   "name": "tree 2 node 0: instrumentalness just above split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.013200000000000002,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 38.051841028194445
+  },
+  {
+   "name": "tree 3 node 0: instrumentalness at split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0132,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 38.426376445429895
+  },
+  {
+   "name": "tree 3 node 0: instrumentalness just above split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.013200000000000002,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 38.051841028194445
+  },
+  {
+   "name": "tree 4 node 0: instrumentalness at split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0231,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 38.051841028194445
+  },
+  {
+   "name": "tree 4 node 0: instrumentalness just above split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.023100000000000002,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 37.87504202819444
+  },
+  {
+   "name": "tree 5 node 0: instrumentalness at split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0231,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 38.051841028194445
+  },
+  {
+   "name": "tree 5 node 0: instrumentalness just above split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.023100000000000002,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 37.87504202819444
+  },
+  {
+   "name": "tree 6 node 0: instrumentalness at split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.155,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 39.235675593432134
+  },
+  {
+   "name": "tree 6 node 0: instrumentalness just above split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.15500000000000003,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 39.20580943743214
+  },
+  {
+   "name": "tree 7 node 0: instrumentalness at split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.124,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 38.94715928343213
+  },
+  {
+   "name": "tree 7 node 0: instrumentalness just above split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.12400000000000001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 39.235675593432134
+  },
+  {
+   "name": "tree 8 node 0: instrumentalness at split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.155,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 39.235675593432134
+  },
+  {
+   "name": "tree 8 node 0: instrumentalness just above split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.15500000000000003,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 39.20580943743214
+  },
+  {
+   "name": "tree 9 node 0: acousticness at split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.000197,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 37.08200890429724
+  },
+  {
+   "name": "tree 9 node 0: acousticness just above split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.00019700000000000002,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 37.61776876140702
+  },
+  {
+   "name": "tree 10 node 0: acousticness at split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.00188,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 37.84718350110552
+  },
+  {
+   "name": "tree 10 node 0: acousticness just above split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.0018800000000000002,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 38.074909229445524
+  },
+  {
+   "name": "tree 11 node 0: acousticness at split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.000567,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 37.61776876140702
+  },
+  {
+   "name": "tree 11 node 0: acousticness just above split",
+   "input": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.0005670000000000001,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   },
+   "expected": 37.84718350110552
+  }
+ ],
+ "invalid": [
+  {
+   "name": "danceability above 1",
+   "patch": {
+    "danceability": 1.2
+   },
+   "field": "danceability",
+   "base": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   }
+  },
+  {
+   "name": "negative tempo",
+   "patch": {
+    "tempo": -5
+   },
+   "field": "tempo",
+   "base": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   }
+  },
+  {
+   "name": "fractional key",
+   "patch": {
+    "key": 2.5
+   },
+   "field": "key",
+   "base": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   }
+  },
+  {
+   "name": "missing loudness",
+   "patch": {
+    "loudness": null
+   },
+   "field": "loudness",
+   "base": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   }
+  },
+  {
+   "name": "duration zero",
+   "patch": {
+    "duration_ms": 0
+   },
+   "field": "duration_ms",
+   "base": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   }
+  },
+  {
+   "name": "loudness too high",
+   "patch": {
+    "loudness": 12
+   },
+   "field": "loudness",
+   "base": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   }
+  },
+  {
+   "name": "time signature 9",
+   "patch": {
+    "time_signature": 9
+   },
+   "field": "time_signature",
+   "base": {
+    "duration_ms": 213120,
+    "explicit": 0,
+    "danceability": 0.578,
+    "energy": 0.676,
+    "key": 5,
+    "loudness": -7.191,
+    "mode": 1,
+    "speechiness": 0.0489,
+    "acousticness": 0.185,
+    "instrumentalness": 0.0001,
+    "liveness": 0.132,
+    "valence": 0.458,
+    "tempo": 122.006,
+    "time_signature": 4
+   }
+  }
+ ],
+ "dataSha256": "b202fa49909b2d5cef71a04b1d21243cfeb36414535f2ca9272aa646721177bd"
+}
